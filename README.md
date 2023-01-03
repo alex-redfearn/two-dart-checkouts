@@ -1,2 +1,2 @@
-# darts-checkouts
+# two-dart-checkouts
 A Kata created by me! Give it a go &lt;link>
