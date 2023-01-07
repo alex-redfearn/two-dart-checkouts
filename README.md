@@ -37,8 +37,8 @@ The kattis problem tools program is the engine that evaluates kata's. A kata sub
 ``` shell
 docker run --rm -it -v "$(pwd)"/two-dart-checkouts:/submission problemtools/full
 ```
-## Submission
+## Submissions
 The submissions are held inside the submissions dir
 
-## Test Cases
+## Test Cases
 Test cases are held inside the dir data/secret
