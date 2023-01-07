@@ -21,3 +21,19 @@ T20 D10
 T18 D16
 T16 D19
 ```
+## Using kattis/problemtools to Evaluate
+For example, suppose you want to use the problemtools/full image. To get started, install the Docker CLI, and then pull the image:
+
+``` shell
+docker pull problemtools/full
+```
+Once the image has finished downloading, you can check that it exists on your system using docker images. To launch an interactive container and play around with verifyproblem, problem2pdf, and problem2html run:
+
+``` shell
+docker run --rm -it problemtools/full
+```
+
+To have ago at this problem, first, you'll need to clone this repo to a local dir on your machine. Next run the problemtools/full image and use a bind mount to mount a local dir into the docker container. You'll need to bind your local copy of this repo into the problemtools/full container:
+``` shell
+docker run --rm -it -v "$(pwd)"/two-dart-checkouts:/submission problemtools/full
+```
