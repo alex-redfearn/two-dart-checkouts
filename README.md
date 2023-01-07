@@ -1,5 +1,5 @@
 # two-dart-checkouts
-A Kata created by me! Give it a go &lt;link>
+A Kata created by me!
 
 ## Problem
 Alex wants to get better at darts. He's great at hitting trebles but not so great at hitting doubles or doing quick maths. From a starting point of 501 he can reliably get down to a score of under 99. He can hit a treble with one dart but he needs two attempts at the double. Siince Alex is bad at maths he needs helping working out the treble and double he needs to hit to finish the game.
