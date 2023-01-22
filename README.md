@@ -35,7 +35,7 @@ docker run --rm -it problemtools/full
 
 The kattis problem tools program is the engine that evaluates kata's. A kata submission can be evaluated by executing 
 ``` shell
-verifyproblem -s ${submission-dir}
+verifyproblem ${submission-dir}
 ```
 where ${submission-dir} is a valid kattis problem package. To run this problem package, first, you'll need to clone this repo to a local dir on your machine. Next run the problemtools/full image and use a bind mount to mount a local dir into the docker container. You'll need to bind your local copy of this repo into the problemtools/full container:
 ``` shell
