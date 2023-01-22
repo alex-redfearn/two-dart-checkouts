@@ -1,5 +1,5 @@
 # two-dart-checkouts
-A Kata created by me! Checkout the kattis engine here https://github.com/Kattis/problemtools
+A Kata created by me!
 
 ## Problem
 Alex wants to get better at darts. He's great at hitting trebles but not so great at hitting doubles or doing quick maths. From a starting point of 501 he can reliably get down to a score of under 99. He can hit a treble with one dart but he needs two attempts at the double. Since Alex is bad at maths he needs help to work out which treble and then double he needs to hit with his remaining three darts.
@@ -27,20 +27,19 @@ To get started, install the Docker CLI, and then pull the image:
 ``` shell
 docker pull problemtools/full
 ```
-Once the image has finished downloading, you can check that it exists on your system using docker images. To launch an interactive container and play around with verifyproblem, problem2pdf, and problem2html run:
-
+Problem tools is the engine that evaluates kata's, you can find the repo here https://github.com/Kattis/problemtools. Once the image has finished downloading, you can check that it exists on your system using `docker images`. To launch an interactive container run:
 ``` shell
 docker run --rm -it problemtools/full
 ```
+To run this problem package, you'll need to clone this repo and launch an interactive container with a bind mount to your local clone.
+``` shell
+docker run --rm -it -v "$(pwd)"/two-dart-checkouts:/two-dart-checkouts problemtools/full
+```
+To evaluate the submissions contained within this problem package, on the container run: 
+``` shell
+verifyproblem /two-dart-checkout
+```
 
-The kattis problem tools program is the engine that evaluates kata's. A kata submission can be evaluated by executing 
-``` shell
-verifyproblem ${submission-dir}
-```
-where ${submission-dir} is a valid kattis problem package. To run this problem package, first, you'll need to clone this repo to a local dir on your machine. Next run the problemtools/full image and use a bind mount to mount a local dir into the docker container. You'll need to bind your local copy of this repo into the problemtools/full container:
-``` shell
-docker run --rm -it -v "$(pwd)"/two-dart-checkouts:/submission problemtools/full
-```
 ## Submissions
 The submissions are held inside the submissions dir
 
