@@ -21,7 +21,14 @@ T20 D10
 T18 D16
 T16 D19
 ```
-## Using kattis/problemtools to Evaluate
+
+## Test Cases
+Test cases are held inside the directory data/secret
+
+## Submissions
+The submissions are held inside the submissions directory.
+
+## Evaluation
 To get started, install the Docker CLI, and then pull the image:
 
 ``` shell
@@ -39,9 +46,3 @@ To evaluate the submissions contained within this problem package, on the contai
 ``` shell
 verifyproblem /two-dart-checkout
 ```
-
-## Submissions
-The submissions are held inside the submissions dir
-
-## Test Cases
-Test cases are held inside the dir data/secret
