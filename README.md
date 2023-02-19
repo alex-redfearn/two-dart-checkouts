@@ -1,5 +1,5 @@
 # two-dart-checkouts
-A Kata created by me!
+A Kata created by me! I was curious to see how the kattis engine worked so I created my own problem package! Kattis stores problems as problem packages, problem packages contain a description of the problem, sample input, sample output, test cases, and the submissions. Below you'll find all of that and an explanation on how to run the kattis engine and mount this problem package into it.
 
 ## Problem
 Alex wants to get better at darts. He's great at hitting trebles but not so great at hitting doubles or doing quick maths. From a starting point of 501 he can reliably get down to a score of under 99. He can hit a treble with one dart but he needs two attempts at the double. Since Alex is bad at maths he needs help to work out which treble and then double he needs to hit with his remaining three darts.
